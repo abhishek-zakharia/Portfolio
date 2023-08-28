@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <div style="align-items: center;margin-top: 20px; border-radius: 50px; border: 1px solid white;width: 100px;height: 100px;">
+                   
+                    <h1 style="font-size: 60px; align-items:center;margin: 10px 7px;"><span style="color: #b54769;">A</span><span>Z</span></h1>  -->
+
+                    <div style="align-items: center;margin-top: 20px;border-radius: 70px; border: 3px solid blue; width: 100px;height: 100px;">
+
+                    <h1 style="font-size: 60px; align-items:center;margin: 10px 7px;"><span>A</span><span style="color: rgb(17, 17, 175)">Z</span></h1> 
+
+            </div>
+                
+                <ul id="menu">
+                    <li><a href="#index">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="Resume.pdf" action="opentab">Resume</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+               
+            </nav>
+            <main>
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Abhishek</span><br> Zakhariya</h1><br>
+                    <p style="font-size: large;">Hello!  Welcome to my personal website. <br> I'm a Web Developer. Here You will find all the details about me.</p>
+                </div>
+                <div class="left">
+                    <img class="img" src="images/deveoper.png" alt="Nothing">
+                </div>
+            </main>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img style="width: 300px;height: 350px;" src="pic2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>Hello! I'm Abhishek, a passionate and driven web developer
+                        currently pursuing my postgraduate studies in Master of Computer Application(MCA) at L.D. College of Engineering, Ahmedabad. 
+                        My journey into the world of web development began when I discovered my fascination for creating
+                        digital experiences that are both functional and visually appealing.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>PHP, ASP.NET</li>
+                            <li><span>Database Management</span><br>SQL Server, MYSQL</li>
+                            <li><span>App Development</span><br>Android Studio</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016 - 2017</span><br>10th SSC <br> Percentage : 61.5%</li>
+                            <li><span>2018 - 2019</span><br>12th HSC <br> Percentage : 76.87%</li>
+                            <li><span>2019 - 2022</span><br>Bachelor of Computer Application (BCA)<br> Percentage : 75.56%</li>
+                            <li><span>2022 - Current</span><br>Master of Computer Application (MCA) <br> Percentage : 80.5%</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/ab_pic.jpg" alt="Kid's Wear"><br>
+                    <div class="layer">
+                        <h3>Online Clothing Store</h3><br>
+                        <p style="font-size: 14px;">Web Application <br> Front-end : HTML, CSS, JavaScript <br> Backend : PHP, MYSQL</p><br>
+                        <p clas@gmas="subtext"><a style="text-decoration: none;color: rgb(17, 17, 175);"
+                                href="https://github.com/abhishek-zakharia/ONLINE-CLOTHING-STORE">View Here</a></p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Kid's Wear.jpg" alt="Kid's Wear"><br>
+                    <div class="layer">
+                        <h3>Kid's Wear</h3><br>
+                        <p style="font-size: 14px;">Web Application <br> Technology: ASP.NET <br> Backend : SQL server</p><br>
+                        <p class="subtext"><a style="text-decoration: none;color: rgb(17, 17, 175);"
+                                href="https://github.com/abhishek-zakharia/Kid-s-Wear">View Here</a></p>
+                    </div>
+                </div>
+                <div class="work ">
+                    <img src="images/ic_launcher-playstore.png" alt="Easy Attendance"><br>
+                    <div class="layer">
+                        <h3>Easy Attendance App</h3><br>
+                        <p style="font-size: small;">Mobile Application <br>Technology : Android <br> Backend : Realm</p><br>
+                        <p class="subtext"><a style="text-decoration: none;color: rgb(17, 17, 175);"
+                                href="https://github.com/abhishek-zakharia/Easy-Attendance-App-main">View Here</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>zakhariyabhi2509@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 9979537197</p>
+
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/abhishek-zakhariya-0092781a3/"><i class="fa-brands fa-linkedin"></i></a>
+                   
+                   
+                        <a href="https://github.com/abhishek-zakharia"><i class="fa-brands fa-github"></i></a>
+                   
+                   
+                        <a href="https://twitter.com/Abhishek2509_"><i class="fa-brands fa-twitter"></i></a>
+                   
+                   
+                        <a href="https://www.instagram.com/abhishek_zakharia/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a id="resume" href="Resume.pdf" download style="display: inline-block;background: rgb(17, 17, 175);" class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn" style="display: inline-block;background: rgb(17, 17, 175);border: none;" type="submit">Submit</button>
+                    </form>
+                    <span id="msg" style="color: #61b752;margin-top: -40px;display: block;"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Abhishek Zakhariya 2023.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        // var tablinks = document.getElementsByClassName("tab-links");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("menu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxaEg4GRZ1xuZakmt8L9Ehwe_2b6GQpBV4QpPRcFdiRNZus5hQwdOuzeIRC8WYeTni8/exec'
+    const form = document.forms['submit-to-google-sheet']
+    constmsg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{ msg.innerHTML = "Message sent Sucessfully"})
+        setTimeout(function(){msg.innerHTML=""},5000)
+        form.reset()
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
